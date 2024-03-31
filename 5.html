@@ -1,0 +1,18 @@
+<style>
+#spin {
+  color:red;
+}
+#spin:after {
+  content:"";
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { content:"ipsum"; }
+
+  40% { content:"101010101"; }
+
+  80% { content: "atque"; }
+  90% { content: "101010101"; }
+}
+</style>
+<p>Lorem <span id="spin"></span></p>

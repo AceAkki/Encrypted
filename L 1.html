@@ -1,0 +1,110 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #060608;
+  --background:url("img/T3.png") no-repeat center fixed;
+  --background-size:cover;
+  --color: #FAFAFA;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--background);
+ background-size:cover !important;
+}
+
+.container {
+  color: var(--color);
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  text-align: right;
+  width: 100%;
+}
+
+.ak {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ak span {
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 10rem;
+  --ak-height: calc(100% / var(--ak) - 1px);
+  --inverse-index: calc(calc(var(--ak) - 1) - var(--index));
+  --clip-top: calc(var(--ak-height) * var(--index));
+  --clip-bottom: calc(var(--ak-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: ak 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.ak span:nth-child(odd) { --glitch-translate: 8px; }
+.ak span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes ak {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+</style>
+
+<div class="container">
+  <span style="background-color:#fff; color:#059d4b">&nbsp; &nbsp;ACE-AKKI</span>
+  <div class="ak" style="--ak: 3;">
+    <span style="--index: 0;">DNCRYPTED</span>
+    <span style="--index: 1;">ENCRYPTED</span>
+    <span style="--index: 2;">DNCRYPTED</span>
+  </div>
+  <span class="right" style="background-color:#fff; color:#059d4b">Information & Tools &nbsp; &nbsp;</span>
+</div>

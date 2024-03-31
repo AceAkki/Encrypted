@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ENCRYPTED B.S. </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://www.fontspace.com/glitch-inside-font-f52693">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="text.css">
+  <link href="https://db.onlinewebfonts.com/c/a0cb693c715aaf804e67963c4d0d4d90?family=ModeSeven" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/aabd801b377f8d13b5fa6ba1482743c7?family=Greek-Freak" rel="stylesheet">
+
+  </style>
+</head>
+
+
+
+<body>
+
+<nav class="navbar navbar-expand-sm" >
+  <div class="container-fluid" >
+  <div>
+   <a  href="#Intro" >
+<img src="img/Logo_0.png" width="220" height="38" 
+onmouseover="this.src='img/Logo_1.png'"
+onmouseout="this.src='img/Logo_0.png'"
+border="0" alt=""/>
+
+
+    </a> </div>
+        
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+     <ul class="navbar-nav" style="text-align:center">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#M-Alpha">Mono-Alphabetic</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="index.html#Caesar">Caesar Cipher</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="info.html#key">Cryptography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="info_0.html#Att">Cryptography Attacks</a>
+      </li>
+
+    </ul>
+
+    <div>
+  </div>
+</nav>
+
+
+  <div class="container-fluid bg-dark">
+    <div class="desk">
+    <iframe src="L 1.html" width="100%" height="700" alignment-baseline:central"></iframe>
+    </div>
+  </div>
+  
+  <div class="container-fluid bg-dark">
+    <div class="phone">
+    <iframe src="L 2.html" width="100%" height="900" alignment-baseline:central"></iframe>
+    </div>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" id="key" style="background:url(img/L/R4.jpg) no-repeat center fixed;background-size:cover">
+<br><br>
+    
+      <iframe src="L_Secret.html" title="" width="100%" height="mx-auto" scrollin="no" style="border:none;overflow: hidden;">
+	</iframe>
+       
+<div class="container md-5">
+<br><br>
+
+<div class="row">
+
+<h1 style="text-align:center"> <span style="background-color:#000; color:#66F;"> Secret Key Cryptography </span> </h1>
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;"> Stream Ciphers</h3>
+
+<p> <span class="ip2">
+Stream ciphers work on a single bit or byte at any time and constantly change the key using feedback mechanisms. A self-synchronizing stream cipher ensures the decryption process stays in sync with the encryption process by recognizing where it sits in the bit keystream. A synchronous stream cipher generates the keystream independently of the message stream and generates the same keystream function at both the sender and the receiver. <br>
+</span>
+
+</p>
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;"> &nbsp; Block Ciphers &nbsp;</h3>
+<p> <span class="ip2">
+Block ciphers encrypt one block of fixed-size data at a time. It will always encrypt a plaintext data block to the same ciphertext when the same key is used. A good example of this is the Feistel cipher, which uses elements of key expansion, permutation, and substitution to create vast confusion and diffusion in the cipher. <br> 
+
+The stages of encryption and decryption are similar if not identical, which means reversing the key reduces the code size and circuitry required for implementing the cipher in a piece of software or hardware.
+ </span> <br> </p>
+
+<h1 style="text-align:center"> <span style="background-color:#000; color:#66F;"> Public Key Cryptography </span> </h1>
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;">RSA</h3>
+<p> <span class="ip2">
+RSA was the first and remains the most common PKC implementation. The algorithm is named after its MIT mathematician developers, Ronald Rivest, Adi Shamir, and Leonard Adleman, and is used in data encryption, digital signatures, and key exchanges. It uses a large number that is the result of factoring two selected prime numbers. It is impossible for an attacker to work out the prime factors, which makes RSA especially secure. </span> </p>
+
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;">Elliptic Curve Cryptography (ECC)</h3>
+<p> <span class="ip2">
+ECC is a PKC algorithm based on the use of elliptic curves in cryptography. It is designed for devices with limited computing power or memory to encrypt internet traffic. A common use of ECC is in embedded computers, smartphones, and cryptocurrency networks like bitcoin, which consumes around 10% of the storage space and bandwidth that RSA requires. </span> </p>
+
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;">Digital Signature Algorithm (DSA)</h3>
+<p> <span class="ip2">
+DSA is a standard that enables digital signatures to be used in message authentication. It was introduced by the National Institute of Standards and Technology (NIST) in 1991 to ensure a better method for creating digital signatures. </span> </p>
+
+
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;">Identity-based Encryption (IBE)</h3>
+<p> <span class="ip2">
+IBE is a PKC system that enables the public key to be calculated from unique information based on the user�s identity, such as their email address. A trusted third party or private key generator then uses a cryptographic algorithm to calculate a corresponding private key. This enables users to create their own private keys without worrying about distributing public keys. </span> </p>
+
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;">Diffie-Hellman and Key Exchange Algorithm (KEA)</h3>
+<p> <span class="ip2">
+The Diffie-Hellman algorithm was devised in 1976 by Stanford University professor Martin Hellman and his graduate student Whitfield Diffie, who are considered to be responsible for introducing PKC as a concept. It is used for secret key exchanges and requires two people to agree on a large prime number. 
+<br>
+
+KEA is a variation of the Diffie-Hellman algorithm and was proposed as a method for key exchange in the NIST/National Security Agency�s (NSA) Capstone project, which developed cryptography standards for public and government use. </span> </p>
+
+
+<h3 style="text-align:center"> <span style="background-color:; color:#FFF;">Hash Function</h3>
+<p> <span class="ip2">
+Hash functions ensure that data integrity is maintained in the encryption and decryption phases of cryptography. It is also used in databases so that items can be retrieved more quickly.  
+<br>
+
+Hashing is the process of taking a key and mapping it to a specific value, which is the hash or hash value. A hash function transforms a key or digital signature, then the hash value and signature are sent to the receiver, who uses the hash function to generate the hash value and compare it with the one they received in the message. <br>
+
+A common hash function is folding, which takes a value and divides it into several parts, adds parts, and uses the last four remaining digits as the key or hashed value. Another is digit rearrangement, which takes specific digits in the original value, reverses them, and uses the remaining number as the hash value. Examples of hash function types include Secure Hash Algorithm 1 (SHA-1), SHA-2, and SHA-3.
+ </span> </p>
+   
+
+</div>
+
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Toast Header</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Some text inside the toast body</p>
+    </div>
+  </div>
+  
+  
+
+</div>
+    
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold"><img src="img/Logo2.png" width="150px" height="28px"></h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here you can just follow us and learn more about us.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Follow</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+
+<br>
+    <a href="https://www.reddit.com/" target="_blank"> 
+	<img src="https://www.redditinc.com/assets/images/site/logo.svg" 
+	width="120px" height="38px" style="background-color:#fff; padding: 2px;border-radius:5px"></a>
+<br>
+
+	<a href="https://www.facebook.com/" target="_blank"> 
+	<img src="https://static.xx.fbcdn.net/rsrc.php/yI/r/4aAhOWlwaXf.svg" 
+	width="150px" height="58px"></a> <br>
+	
+	<a href="https://www.instagram.com/" target="_blank"> 
+	<img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png?20200512141346" width="40px" height="38px" style="background-color:#fff; padding: 2px;border-radius:5px">
+        </a>  &nbsp;
+
+	<a href="https://twitter.com/" target="_blank"> 
+	<img src="https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" 
+	width="40px" height="38px" style="background-color:#fff; padding: 2px; border-radius:5px"></a> &nbsp; 
+    
+    <a href="https://www.linkedin.com" target="_blank"> 
+	<img src="https://content.linkedin.com/content/dam/me/about/LinkedIn_Icon.jpg.original.jpg" 
+	width="40px" height="38px" style="background-color:#fff; padding: 2px;border-radius:5px"></a>  &nbsp;
+    <a href="https://www.tumblr.com/" target="_blank"> 
+    
+	<img src="https://static.tumblr.com/0du9egr/wi8rbqdo0/tumblrlogowhite.png" 
+	width="25px" height="38px" style="background-color:#000; padding: 2px;"></a> <br> <br>
+    
+
+
+    <br><br><br><br><br>
+     
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links to Watch</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+<br>
+
+    <a href="https://www.youtube.com/" target="_blank"> 
+	<img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" 
+	width="130px" height="38px" style="background-color:#fff; padding: 2px;border-radius:4px"></a>
+<br> <br>
+
+    <a href="https://www.microsoft.com/en-in/microsoft-teams/download-app" target="_blank"> 
+	<img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" width="130px" height="38px" style="background-color:#fff; padding: 2px;border-radius:5px"></a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">First Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+
+<br>
+    <a href="https://web.whatsapp.com/" target="_blank"> 
+	<img src="https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png" 
+	width="145px" height="38px" style="background-color:#fff; padding: 2px;border-radius:5px"></a>
+<br><br>
+
+
+    <a href="https://signal.org/" target="_blank"> 
+	<img src="https://signal.org/assets/header/logo-f7ef605fe417d5520d38d546b3b774b4261c75220b9904da4d8b2ffc19a761ff.png" 
+	width="120px" height="38px" style="background-color:#fff; padding: 2px;border-radius:5px"></a>
+<br><br>
+
+    <a href="https://discord.com/" target="_blank"> 
+	<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open%20Source%20Projects%20_%20Discord-7.svg" 
+	width="120px" height="38px" style="background-color:#5865f2; padding: 5px;border-radius:5px"></a>
+<br><br>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      � 2020 Copyright:
+      <a class="text-white" href="https://github.com/AceAkki"
+         >AceAkki</a
+        >
+    </div>
+    <!-- Copyright -->
+
+  <!-- Footer -->
+</div>
+
+
+
+
+
+ <script>
+        
+
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+
+    </script>
+</body>
+</html>

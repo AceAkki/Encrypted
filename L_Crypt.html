@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://db.onlinewebfonts.com/c/a0cb693c715aaf804e67963c4d0d4d90?family=ModeSeven" rel="stylesheet">
+  <style>
+    body {
+      background: #182028;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 45vmin;
+      color: #6a62b5;
+      text-align: center;
+      font-family: Modeseven;
+      font-weight: 700;
+      margin: 1rem 0 1rem 2rem;
+    }
+
+    /* Typewriter effect 1 */
+    @keyframes typing {
+ 	0.0000%, 95% { content:  ""; }
+  	1%, 89.2093% { content:  "C"; }
+  	3%, 83.0698% { content:  "Cr"; }
+ 	5%, 78.9302% { content:  "Cry"; }
+  	7%, 73.7907% { content:  "Cryp"; }
+  	8%, 68.6512% { content:  "Crypt"; }
+  	10%, 65.5116% { content: "Crypto"; }
+  	12%, 62.3721% { content: "Cryptog"; }
+  	14%, 60.2326% { content: "Cryptogr"; }
+  	16%, 58.0930% { content: "Cryptogra"; }
+ 	18%, 55.0930% { content: "Cryptograp"; }
+ 	20%, 52.0930% { content: "Cryptograph"; }
+	22%, 50.0930% { content: "Cryptography"; }
+
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .typewriter {
+      --caret: currentcolor;
+    }
+
+    .typewriter::before {
+      content: "";
+      animation: typing 13.5s infinite;
+    }
+
+    .typewriter::after {
+      content: "";
+      border-right: 1px solid var(--caret);
+      animation: blink 0.5s linear infinite;
+    }
+
+    .typewriter.thick::after {
+      border-right: 1ch solid var(--caret);
+    }
+
+    .typewriter.nocaret::after {
+      border-right: 0;
+    }
+
+    @media (prefers-reduced-motion) {
+      .typewriter::after {
+        animation: none;
+      }
+
+      @keyframes sequencePopup {
+        0%, 100% { content: "Cryptography"; }
+      }
+
+      .typewriter::before {
+        content: "Cryptography";
+        animation: sequencePopup 12s linear infinite;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 aria-label="Cryptography">
+    <span class="typewriter thick"></span>
+  </h1>
+</body>
+</html>
